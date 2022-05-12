@@ -14,6 +14,7 @@ import org.bukkit.scoreboard.Team;
 
 import net.milkbowl.vault.economy.Economy;
 import net.milkbowl.vault.permission.Permission;
+import tk.cmplx.kitpvp.cmd.Reload;
 import tk.cmplx.kitpvp.event.Death;
 import tk.cmplx.kitpvp.event.InvisibilityBugFix;
 import tk.cmplx.kitpvp.event.KitSelection;
@@ -47,6 +48,8 @@ public class Main extends JavaPlugin implements Listener {
 
 		for(Kit k : KitManager.kits)
 			Log.info("Registered Kit " + k.getClass().getSimpleName());
+
+        this.getCommand("kitpvp").setExecutor(new Reload(this));
 
 		Log.info("Total: " + KitManager.kits.length + " Kits Registered!");
 		Log.info("Registering Events...");
