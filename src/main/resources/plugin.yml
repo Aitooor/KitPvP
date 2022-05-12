@@ -1,0 +1,7 @@
+name: KitPvP
+main: tk.cmplx.kitpvp.Main
+version: 1.2-Dev
+commands:
+   reloadkits:
+      description: Reloads Kits.
+      usage: /reloadkits
