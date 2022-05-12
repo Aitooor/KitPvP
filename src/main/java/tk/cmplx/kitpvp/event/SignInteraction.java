@@ -20,10 +20,9 @@ public class SignInteraction implements Listener {
     @EventHandler
     public void onSignChange(SignChangeEvent e) {
         if (e.getLine(0).equalsIgnoreCase("[kitpvp]")) {
-            e.setLine(0, Utils.tr("&0&lKitPvP"));
-            e.setLine(1, Utils.tr("&7Elige tu &lKIT"));
-            e.setLine(2, Utils.tr(""));
-            e.setLine(3, Utils.tr("&0Click para elegir"));
+            e.setLine(0, Utils.tr("&b&lKitPvP"));
+            e.setLine(1, Utils.tr("&dWähle dein"));
+            e.setLine(2, Utils.tr("&c[Kit]"));
         }
     }
 
@@ -31,7 +30,7 @@ public class SignInteraction implements Listener {
     public void onSignInteract(PlayerInteractEvent e) {
         if (e.getAction() == Action.LEFT_CLICK_BLOCK && e.getClickedBlock().getState() instanceof Sign || e.getAction() == Action.RIGHT_CLICK_BLOCK && e.getClickedBlock().getState() instanceof Sign) {
             Sign s = (Sign) e.getClickedBlock().getState();
-            if (s.getLine(0).contains(Utils.tr("&0&lKitPvP")))
+            if (s.getLine(0).contains(Utils.tr("&b&lKitPvP")))
 				KitManager.openKitSelection(e.getPlayer());
         }
     }
