@@ -4,7 +4,7 @@
 
     <groupId>tk.cmplx</groupId>
     <artifactId>KitPvP</artifactId>
-    <version>1.2</version>
+    <version>1.3</version>
     <packaging>jar</packaging>
 
     <name>KitPvP</name>
