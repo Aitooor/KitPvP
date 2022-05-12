@@ -1,0 +1,11 @@
+## SIGNS CONFIGURATION ########################################################
+## If you used &0, you don't need to write it. Example: &lTEST = &0&lTEST.  ##
+## Si usas &0, no debes escribirlo. Ejemplo: &lTEST = &0&lTEST.            ##
+############################################################################
+signs:
+  admin-setup-name: "[kitpvp]"
+  lines:
+    first-line: "&l✼ KitPvP ✼"
+    second-line: "&5Selecciona tu &lKIT"
+    third-line: ""
+    fourth-line: "&8Dale Clic"

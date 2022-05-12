@@ -38,6 +38,9 @@ public class Main extends JavaPlugin implements Listener {
 
     public void onEnable(){
 		instance = this;
+
+        this.saveDefaultConfig();
+
 		Log.initialize();
 
         Log.info("Loading Kits...");
