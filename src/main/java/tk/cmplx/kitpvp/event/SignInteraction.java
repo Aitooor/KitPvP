@@ -28,7 +28,7 @@ public class SignInteraction implements Listener {
 
     @EventHandler
     public void onSignInteract(PlayerInteractEvent e) {
-        if (e.getAction() == Action.RIGHT_CLICK_BLOCK && e.getClickedBlock().getState() instanceof Sign) {
+        if (e.getAction() == Action.LEFT_CLICK_BLOCK && e.getClickedBlock().getState() instanceof Sign || e.getAction() == Action.RIGHT_CLICK_BLOCK && e.getClickedBlock().getState() instanceof Sign) {
             Sign s = (Sign) e.getClickedBlock().getState();
             if (s.getLine(0).contains(Utils.tr("&b&lKitPvP")))
 				KitManager.openKitSelection(e.getPlayer());
