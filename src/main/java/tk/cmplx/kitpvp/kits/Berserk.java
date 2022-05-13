@@ -15,13 +15,14 @@ public class Berserk extends Kit {
 		price = 5500;
 
 		lore = new String[] {
-				"&6Dieses Kit beinhaltet:",
-				"&2- Eisenschwert",
-				"&2- Lederjacke",
-				"&5- Permanent Stärke 1"
+				"&6&lCOSAS",
+				"&r",
+				"&7- &fEspada de hierro",
+				"&7- &fPechera de cuero",
+				"&7- &fFuerza 1 Permanente"
 		};
 
-		displayItem = new CItemStack(Material.IRON_SWORD).setName("&4Berserker").build();
+		displayItem = new CItemStack(Material.IRON_SWORD).setName("&bENLOQUEZIDO").build();
 		chest = new CLeatherArmor(Material.LEATHER_CHESTPLATE).color(Color.RED).makeUnbreakable().build();
 
 		hotbar[0] = new CItemStack(Material.IRON_SWORD).makeUnbreakable().build();

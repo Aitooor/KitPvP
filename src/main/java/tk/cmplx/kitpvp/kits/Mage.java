@@ -19,22 +19,23 @@ public class Mage extends Kit {
         price = 4500;
 
         lore = new String[]{
-                "&6Dieses Kit beinhaltet:",
-                "&2- Holzschwert",
-                "&2- Lederhelm",
-                "&2- Eisenbrustplatte",
-                "&2- Lederhose",
-                "&2- Lederschuhe",
-                "&2- Werfbarer Schadenstrank Level 2",
-                "&2- 2 Werfbarer Schadenstrank Level 1",
-                "&2- Trank der Regeneration",
-                "&2- 2 Werfbare Heiltränke",
-                "&2- Feuerresistenz Trank",
-                "&2- Geschwindigkeits Trank",
-                "&5- Permanent Nachtsicht"
+                "&6Este kit incluye:",
+                "",
+                "&7- &fEspada de madera",
+                "&7- &fCasco de cuero",
+                "&7- &fPechera de Hierro",
+                "&7- &fPantalones de cuero",
+                "&7- &fBotas de cuero",
+                "&7- &fPoción de daño arrojadiza nivel 2",
+                "&7- &f2 pociones de daño arrojadiza nivel 1",
+                "&7- &fPoción de Regeneración",
+                "&7- &f2 pociones de salud arrojadiza",
+                "&7- &fPoción de Resistencia al Fuego",
+                "&7- &fPoción de Velocidad",
+                "&7- &fVisión nocturna permanente"
         };
 
-        displayItem = new CPotion().setType(PotionType.NIGHT_VISION).hideFlag(ItemFlag.HIDE_POTION_EFFECTS).setName("&6Magier").build();
+        displayItem = new CPotion().setType(PotionType.NIGHT_VISION).hideFlag(ItemFlag.HIDE_POTION_EFFECTS).setName("&bMAGO").build();
 
         helm = new CLeatherArmor(Material.LEATHER_HELMET).color(Color.FUCHSIA).makeUnbreakable().build();
         chest = new CItemStack(Material.IRON_CHESTPLATE).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1).makeUnbreakable().build();

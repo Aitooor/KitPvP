@@ -46,6 +46,7 @@ public class SmallEvents implements Listener {
         Player p = e.getPlayer();
         p.teleport(e.getPlayer().getWorld().getSpawnLocation());
         p.setHealth(p.getMaxHealth());
+        clearPlayer(p);
 
         Bukkit.getScheduler().runTaskLater(Main.instance, () -> {
             e.getPlayer().setScoreboard(Bukkit.getScoreboardManager().getNewScoreboard());

@@ -18,13 +18,14 @@ public class Onehit extends Kit {
         maxHealth = 2;
 
         lore = new String[]{
-                "&6Dieses Kit beinhaltet:",
-                "&2- Töten oder Getötet Werden ;)"
+                "&6&lCOSA",
+                "",
+                "&7- &fMata o muere ;)"
         };
 
-        displayItem = new CItemStack(Material.SPECKLED_MELON).setName("&4Onehit").build();
+        displayItem = new CItemStack(Material.SPECKLED_MELON).setName("&bUN GOLPE").build();
 
-        hotbar[0] = new CItemStack(Material.GOLD_SWORD).makeUnbreakable().setName("&6Dämmerbrecher").addEnchantment(Enchantment.DAMAGE_ALL, 10).build();
+        hotbar[0] = new CItemStack(Material.GOLD_SWORD).makeUnbreakable().setName("&6Rompedor del crepúsculo").addEnchantment(Enchantment.DAMAGE_ALL, 10).build();
         boots = new CLeatherArmor(Material.LEATHER_BOOTS).color(Color.RED).addEnchantment(Enchantment.PROTECTION_FALL, 10).makeUnbreakable().build();
 
         addEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, Integer.MAX_VALUE, 100));

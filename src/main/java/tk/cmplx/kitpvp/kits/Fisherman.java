@@ -11,17 +11,18 @@ public class Fisherman extends Kit{
         price = 1250;
 
         lore = new String[]{
-                "&6Dieses Kit beinhaltet:",
-                "&2- Eisenschwert",
-                "&2- Angel",
-                "&2- 2 Goldäpfel",
-                "&2- Kettenhelm",
-                "&2- Lederbrustplatte",
-                "&2- Kettenhose",
-                "&2- Kettenschuhe"
+                "&6&lCOSAS",
+                "",
+                "&7- &fEspada de hierro",
+                "&7- &fCaña de pescar",
+                "&7- &f2 manzanas doradas",
+                "&7- &fCasco de cota de malla",
+                "&7- &fPechera de cuero",
+                "&7- &fPantalones de cota de malla",
+                "&7- &fBotas de cota de malla"
         };
 
-        displayItem = new CItemStack(Material.FISHING_ROD).setName("&bAngler").build();
+        displayItem = new CItemStack(Material.FISHING_ROD).setName("&bPESCADOR").build();
 
         helm = new CItemStack(Material.CHAINMAIL_HELMET).makeUnbreakable().build();
         chest = new CItemStack(Material.LEATHER_CHESTPLATE).makeUnbreakable().build();

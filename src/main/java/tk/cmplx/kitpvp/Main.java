@@ -1,26 +1,14 @@
 package tk.cmplx.kitpvp;
 
-import java.util.HashMap;
-
 import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.scoreboard.NameTagVisibility;
-import org.bukkit.scoreboard.Scoreboard;
-import org.bukkit.scoreboard.ScoreboardManager;
-import org.bukkit.scoreboard.Team;
 
 import net.milkbowl.vault.economy.Economy;
 import net.milkbowl.vault.permission.Permission;
 import tk.cmplx.kitpvp.cmd.Reload;
-import tk.cmplx.kitpvp.event.Death;
-import tk.cmplx.kitpvp.event.InvisibilityBugFix;
-import tk.cmplx.kitpvp.event.KitSelection;
-import tk.cmplx.kitpvp.event.KitSpecific;
-import tk.cmplx.kitpvp.event.SignInteraction;
-import tk.cmplx.kitpvp.event.SmallEvents;
+import tk.cmplx.kitpvp.event.*;
 import tk.cmplx.kitpvp.utils.Kit;
 import tk.cmplx.kitpvp.utils.Log;
 

@@ -22,7 +22,7 @@ public abstract class Kit {
     public static final ItemStack AIR = new ItemStack(Material.AIR);
     
     public String permission = "kitpvp.default";
-	public String[] lore = new String[] { "keine lore!" };
+	public String[] lore = new String[] { "¡Sin lore!" };
 
     public boolean buyable = true;
     public boolean dropExclusive = false;

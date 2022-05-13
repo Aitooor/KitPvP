@@ -20,18 +20,19 @@ public class Ender extends Kit{
         buyable = false;
 
         lore = new String[]{
-                "&6Dieses Kit beinhaltet:",
-                "&2- Steinschwert",
-                "&2- Lederhelm",
-                "&2- Eisenbrustpanzer Schussicher 1",
-                "&2- 8 Enderperlen",
-                "&2- Lederhose",
-                "&2- Eisenschuhe Federfall 10",
-                "&5- Heilung beim Treffen der Enderperle für Kurze Zeit",
-                "&5- Permanent Geschwindigkeit 1"
+                "&6&lCOSAS",
+                "",
+                "&7- &fEspada de piedra",
+                "&7- &fCasco de cuero",
+                "&7- &fPechera de hierro a prueba de balas 1",
+                "&7- &f8 perlas ender",
+                "&7- &fPantalones de cuero",
+                "&7- &fBotas de hierro Caida Pluma 10",
+                "&7- &fCura al golpear la enderpearl por un corto tiempo",
+                "&7- &fVelocidad 1 permanente"
         };
 
-        displayItem = new CItemStack(Material.ENDER_PEARL).setName("&3Ender").build();
+        displayItem = new CItemStack(Material.ENDER_PEARL).setName("&bENDERMAN").build();
 
         helm = new CLeatherArmor(Material.LEATHER_HELMET).color(Color.BLACK).makeUnbreakable().build();
         chest = new CItemStack(Material.IRON_CHESTPLATE).addEnchantment(Enchantment.PROTECTION_PROJECTILE, 1).makeUnbreakable().build();

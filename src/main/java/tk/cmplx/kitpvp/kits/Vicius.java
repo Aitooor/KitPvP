@@ -14,25 +14,26 @@ import tk.cmplx.kitpvp.utils.CLeatherArmor;
 import tk.cmplx.kitpvp.utils.Kit;
 import tk.cmplx.kitpvp.utils.Utils;
 
-public class Drugaddict extends Kit {
-	public Drugaddict() {
+public class Vicius extends Kit {
+	public Vicius() {
         price = 4000;
         permission = "kitpvp.drugaddict";
 
         lore = new String[]{
-                "&6Dieses Kit beinhaltet:",
-                "&2- Zerbrochene Glasflasche",
-                "&2- Zerissene Pennerhose",
-                "&5- 5 Gramm Kokain"
+				"&6&lCOSAS",
+				"",
+				"&7- &fBotella de vidrio rota",
+				"&7- &fPantalones rotos",
+				"&7- &f5 gramos de cocaina"
         };
 
-        displayItem = new CItemStack(Material.SUGAR).setName("&bDrogenjunkie").build();
+        displayItem = new CItemStack(Material.SUGAR).setName("&bVICIOSO").build();
 
-        hotbar[0] = new CItemStack(Material.GLASS_BOTTLE).setName("&8Zerbrochene Flasche").makeUnbreakable().addEnchantment(Enchantment.DAMAGE_ALL, 5).build();
+        hotbar[0] = new CItemStack(Material.GLASS_BOTTLE).setName("&8Botella rota").makeUnbreakable().addEnchantment(Enchantment.DAMAGE_ALL, 5).build();
 
         legs = new CLeatherArmor(Material.LEATHER_LEGGINGS).color(Color.BLACK).makeUnbreakable().addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 8).build();
 
-        hotbar[1] = new CItemStack(Material.SUGAR).setAmt(5).setName("&7Kokain").build();
+        hotbar[1] = new CItemStack(Material.SUGAR).setAmt(5).setName("&bAzucar").build();
 	}
 
 	PotionEffect[] cocain = {

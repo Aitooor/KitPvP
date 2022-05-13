@@ -32,7 +32,7 @@ public class KitSelection implements Listener {
 		Inventory i = e.getInventory();
 
 		if (c == null || c.getType() == Material.AIR) return;
-		if (!i.getName().contains(ChatColor.LIGHT_PURPLE + "Kits")) return;
+		if (!i.getName().contains(ChatColor.BLACK + "SELECTOR DE KITS")) return;
 
 		e.setCancelled(true);
 
@@ -45,12 +45,12 @@ public class KitSelection implements Listener {
 				long cooldown = System.currentTimeMillis() - (lastSelected == null ? 0 : lastSelected);
 				if (cooldown < 30000) {
 					int wait = (int) ((30000 - cooldown) / 1000);
-					Utils.msg(p, "&cDu musst noch " + wait + " Sekunden Warten!");
+					Utils.msg(p, "&cTodavía tienes que esperar " + wait + " segundos!");
 					return;
 				}
 			}
 
-			Utils.msg(p, "&aErfolgreich das Kit " + c.getItemMeta().getDisplayName() + " &a Ausgewählt!");
+			Utils.msg(p, "&aSeleccionado &f" + c.getItemMeta().getDisplayName());
 			p.playSound(p.getLocation(), Sound.ORB_PICKUP, 3, 1);
 			p.closeInventory();
 
@@ -70,25 +70,25 @@ public class KitSelection implements Listener {
 							Main.instance.econ.withdrawPlayer(p, k.price);
 							Main.instance.perms.playerAdd(null, p, k.permission);
 
-							Utils.msg(p, "&aDu hast erfolgreich das Kit: " + c.getItemMeta().getDisplayName()
-									+ "&a gekauft. Vielen Dank!");
+							Utils.msg(p, "&aHas comprado el KIT: " + c.getItemMeta().getDisplayName()
+									+ "&a ¡Muchas gracias!");
 
 							p.playSound(p.getLocation(), Sound.LEVEL_UP, 1, 0.8F);
 							p.closeInventory();
 							return;
 						} else {
 							p.playSound(p.getLocation(), Sound.VILLAGER_NO, 1, 1);
-							Utils.msg(p, "&cDu hast nicht genug Geld für das Kit: " + c.getItemMeta().getDisplayName());
+							Utils.msg(p, "&cNo tienes suficiente dinero para el kit: " + c.getItemMeta().getDisplayName());
 							return;
 						}
 					} else {
 						p.playSound(p.getLocation(), Sound.VILLAGER_NO, 1, 1);
-						Utils.msg(p, "&cDu kannst diese Kit nicht Kaufen!");
+						Utils.msg(p, "&c¡No puedes comprar este kit!");
 						return;
 					}
 				}
 			}
-			Utils.msg(p, "&cKeine Berechtigung auf das Kit: " + c.getItemMeta().getDisplayName());
+			Utils.msg(p, "&cSin derecho al kit: " + c.getItemMeta().getDisplayName());
 		}
 
 	}

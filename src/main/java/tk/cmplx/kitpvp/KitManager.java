@@ -26,7 +26,7 @@ public class KitManager {
 			new Fisherman(),
 			new Witch(),
 			new Rabbit(),
-			new Canadian(),
+			new Berserker(),
 			new Housewife(),
 			new Berserk(),
 			new Soup(),
@@ -37,7 +37,7 @@ public class KitManager {
 			new Skeleton(),
 			new Vampire(),
 			new Wither(),
-			new Drugaddict(),
+			new Vicius(),
 
 			new Ghost(),
 			new Ender(),
@@ -46,7 +46,7 @@ public class KitManager {
 	};
 
 	public static void openKitSelection(Player p) {
-		Inventory dummy = Bukkit.createInventory(null, 9 * (int) Math.ceil(KitManager.kits.length / 9.0), ChatColor.LIGHT_PURPLE + "Kits");
+		Inventory dummy = Bukkit.createInventory(null, 9 * (int) Math.ceil(KitManager.kits.length / 9.0), ChatColor.BLACK + "SELECTOR DE KITS");
 
 		int slot = 0;
 		for (Kit k : KitManager.kits) {
@@ -57,19 +57,19 @@ public class KitManager {
 			if (!p.hasPermission(k.permission)) {
 				if (Main.economyHook && Main.permissionHook) {
 					if (k.buyable) {
-						lore.add(0, ChatColor.RED + "Nicht Gekauft!");
-						lore.add(0, ChatColor.GOLD + "Preis: " + k.price);
-						lore.add(0, ChatColor.AQUA + "Kaufe mit Rechtsklick!");
+						lore.add(0, ChatColor.RED + "¡No comprado!");
+						lore.add(0, ChatColor.GOLD + "Precio " + ChatColor.YELLOW + k.price);
+						lore.add(0, ChatColor.AQUA + "¡Compra con clic derecho!");
 					} else if (k.dropExclusive) {
-						lore.add(0, ChatColor.RED + "Nicht Kaufbar!");
-						lore.add(0, ChatColor.AQUA + "Nur als Drop Erhältlich!");
+						lore.add(0, ChatColor.RED + "¡No se puede comprar!");
+						lore.add(0, ChatColor.AQUA + "¡Solo disponible como drop!");
 					} else {
-						lore.add(0, ChatColor.RED + "Nicht Kaufbar!");
-						lore.add(0, ChatColor.LIGHT_PURPLE + "Exklusiv Für VIP!");
+						lore.add(0, ChatColor.RED + "¡No se puede comprar!");
+						lore.add(0, ChatColor.LIGHT_PURPLE + "¡Exclusivo para VIP!");
 					}
 				}
 			} else
-				lore.add(0, ChatColor.GREEN + "Bereits Gekauft!");
+				lore.add(0, ChatColor.GREEN + "¡Ya comprado!");
 
 			dummy.setItem(slot, displayItem.addLore(lore.toArray(new String[0])).build());
 			slot++;

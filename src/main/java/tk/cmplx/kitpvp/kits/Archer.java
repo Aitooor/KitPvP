@@ -14,18 +14,19 @@ import tk.cmplx.kitpvp.utils.Kit;
 public class Archer extends Kit {
 	public Archer() {
 		lore = new String[] {
-				"&6Dieses Kit beinhaltet:",
-				"&2- Holzschwert Schärfe 1",
-				"&2- Bogen Stärke 1, Schlag 1, Unendlichkeit",
-				"&2- Werfbarer Trank der Heilung",
-				"&2- Lederkappe",
-				"&2- Kettenbrustpanzer",
-				"&2- Lederhose",
-				"&2- Lederschuhe",
-				"&5- Permanent Geschwindigkeit 1"
+				"&6&lCOSAS",
+				"&r",
+				"&7- &fEspada de madera Filo 1",
+				"&7- &fFuerza 1&7, &fGolpeo 1&7, &fInfinito",
+				"&7- &fPoción de curación arrojadiza",
+				"&7- &fCasco de cuero",
+				"&7- &fPechera de malla",
+				"&7- &fPantalones de cuero",
+				"&7- &fBotas de cuero",
+				"&7- &fVelocidad 1 PERMANENTE"
 		};
 
-		displayItem = new CItemStack(Material.BOW).setName("&2Archer").build();
+		displayItem = new CItemStack(Material.BOW).setName("&bARQUERO").build();
 		helm = new CLeatherArmor(Material.LEATHER_HELMET).color(Color.GREEN).makeUnbreakable().build();
 		chest = new CItemStack(Material.CHAINMAIL_CHESTPLATE).makeUnbreakable().build();
 		legs = new CLeatherArmor(Material.LEATHER_LEGGINGS).color(Color.GREEN).makeUnbreakable().build();
@@ -36,7 +37,7 @@ public class Archer extends Kit {
 				.addEnchantment(Enchantment.ARROW_DAMAGE, 1)
 				.addEnchantment(Enchantment.ARROW_KNOCKBACK, 1).build();
 		hotbar[7] = new CPotion().addInstantEffect(true).splash().build();
-		hotbar[8] = new CItemStack(Material.ARROW).setName("&6Legendärer Pfeil").build();
+		hotbar[8] = new CItemStack(Material.ARROW).setName("&eFlecha legendaria").build();
 		addEffect(new PotionEffect(PotionEffectType.SPEED, Integer.MAX_VALUE, 0));
 
 	}

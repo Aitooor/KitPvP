@@ -23,11 +23,12 @@ public class Dragonknight extends Kit {
         permission = "kitpvp.dk";
 
         lore = new String[]{
-                "&6Dieses Kit beinhaltet:",
-                "&6- Die Drakonische Macht"
+				"&6&lCOSAS",
+				"",
+				"&7- &fEl poder dracónico"
         };
 
-        displayItem = new CItemStack(Material.BLAZE_POWDER).setName("&6D&4r&6a&4c&6h&4e&6n&4r&6i&4t&6t&4e&6r").build();
+        displayItem = new CItemStack(Material.BLAZE_POWDER).setName("&bSANGRE DE DRAGON").build();
         helm = new CItemStack(Material.GOLD_HELMET)
                 .makeUnbreakable()
                 .addEnchantment(Enchantment.PROTECTION_FIRE, 1)
@@ -43,16 +44,16 @@ public class Dragonknight extends Kit {
 											.makeUnbreakable()
 											.addEnchantment(Enchantment.ARROW_FIRE, 1)
 											.addEnchantment(Enchantment.ARROW_KNOCKBACK, 1)
-											.setName("&6Bogen des Meisters").build();
-        hotbar[2] = new CItemStack(Material.BLAZE_POWDER, 2).setName("&4Drachenblut").build();
+											.setName("&aArco del maestro").build();
+        hotbar[2] = new CItemStack(Material.BLAZE_POWDER, 2).setName("&cSangre de dragón").build();
         hotbar[3] = new CPotion().setType(PotionType.FIRE_RESISTANCE)
 								.addPotionEffect(PotionEffectType.ABSORPTION,1,16)
 								.addPotionEffect(PotionEffectType.DAMAGE_RESISTANCE,25)
 								.addPotionEffect(PotionEffectType.FIRE_RESISTANCE,16)
 								.setAmt(2)
-								.setName("&6Lavatrunk")
+								.setName("&6Bebida de lava")
 								.build();
-        hotbar[8] = new CItemStack(Material.ARROW, 3).setName("&0Tödlicher Pfeil").build();
+        hotbar[8] = new CItemStack(Material.ARROW, 3).setName("&8Flecha mortal").build();
 
         addEffect(new PotionEffect(PotionEffectType.REGENERATION, Integer.MAX_VALUE, 0));
 	}

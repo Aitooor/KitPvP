@@ -14,16 +14,17 @@ public class Barbar extends Kit {
         permission = "kitpvp.barbar";
 
         lore = new String[]{
-                "&6Dieses Kit beinhaltet:",
-                "&2- Steinaxt",
-                "&2- Regenerationstrank Level 2",
-                "&2- Eisenhelm",
-                "&2- Kettenbrust",
-                "&2- Lederhose",
-                "&2- Lederschuhe"
+                "&6&lCOSAS",
+                "&r",
+                "&7- &fHacha de piedra",
+                "&7- &fPoción de regeneración de nivel 2",
+                "&7- &fCasco de hierro",
+                "&7- &fPechera de hierro",
+                "&7- &fPantalones de hierro",
+                "&7- &fBotas de cuero"
         };
 
-        displayItem = new CItemStack(Material.STONE_AXE).setName("&eBarbar").build();
+        displayItem = new CItemStack(Material.STONE_AXE).setName("&bBARBARO").build();
         helm = new CItemStack(Material.IRON_HELMET).makeUnbreakable().build();
         chest = new CItemStack(Material.CHAINMAIL_CHESTPLATE).makeUnbreakable().build();
         legs = new CItemStack(Material.LEATHER_LEGGINGS).makeUnbreakable().build();
