@@ -1,6 +1,7 @@
 name: KitPvP
 main: tk.cmplx.kitpvp.Main
 version: ${project.version}
+
 commands:
    kitpvp:
       aliases: [kpvp]
