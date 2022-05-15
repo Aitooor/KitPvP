@@ -1,5 +1,5 @@
 name: KitPvP
-main: tk.cmplx.kitpvp.Main
+main: net.eternaln.kitpvp.Main
 version: ${project.version}
 
 commands:
