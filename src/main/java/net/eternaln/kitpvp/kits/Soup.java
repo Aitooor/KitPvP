@@ -21,7 +21,7 @@ public class Soup extends Kit {
                 "&7- &fCuración al usar las sopas"
         };
 
-        displayItem = new CItemStack(Material.MUSHROOM_SOUP).setName("&eSoup").build();
+        displayItem = new CItemStack(Material.MUSHROOM_SOUP).setName("&bSOPITA").build();
 
         helm = new CItemStack(Material.CHAINMAIL_HELMET).makeUnbreakable().build();
         chest = new CItemStack(Material.CHAINMAIL_CHESTPLATE).makeUnbreakable().build();
