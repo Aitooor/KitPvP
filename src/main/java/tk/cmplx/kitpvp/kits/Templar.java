@@ -16,14 +16,15 @@ public class Templar extends Kit{
         price = 3750;
 
        	lore = new String[]{
-                "&6Dieses Kit beinhaltet:",
-                "&2- Eisenschwert",
-                "&2- Eisenbrustplatte Schutz 1",
-                "&2- 2 Werfbare Heiltränke",
-                "&5- 14 Goldene Extraherzen"
+                "&6&lCOSAS",
+                "",
+                "&7- &fEspada de hierro",
+                "&7- &fPechera de Hierro Protección 1",
+                "&7- &f2 pociones de salud arrojadizas",
+                "&7- &f14 corazones de oro extra"
         };
 
-        displayItem = new CItemStack(Material.GOLDEN_APPLE).setName("&6Templer").build();
+        displayItem = new CItemStack(Material.GOLDEN_APPLE).setName("&bTEMPLARIO").build();
 
         chest = new CItemStack(Material.IRON_CHESTPLATE).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1).makeUnbreakable().build();
 

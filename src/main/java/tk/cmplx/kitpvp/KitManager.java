@@ -27,7 +27,7 @@ public class KitManager {
 			new Witch(),
 			new Rabbit(),
 			new Berserker(),
-			new Housewife(),
+			new Dressmaker(),
 			new Berserk(),
 			new Soup(),
 			new Templar(),

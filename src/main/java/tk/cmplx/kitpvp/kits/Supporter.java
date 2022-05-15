@@ -21,20 +21,21 @@ public class Supporter extends Kit {
         maxHealth = 30;
 
         lore = new String[]{
-                "&6Dieses Kit beinhaltet:",
-                "&2- Goldbrustplatte Schutz 3",
-                "&2- Holzschwert Rückstoß 1",
-                "&2- 5x Werfbare Direktheilung 2",
-                "&2- 3x Werfbarer Resistenztrank",
-                "&2- 2x Werfbarer Schildtrank",
-                "&2- 2x Werfbare Regeneration 2",
-                "&2- 3x Werfbare Regeneration",
-                "&2- Kräfties Gebräu der Hexenmutter",
-                "&5- Permanent 4 Extraherzen",
-                "&c- Permanent Schwäche 2"
+                "&6&lCOSAS",
+                "",
+                "&7- &fPechera de oro Protección 3",
+                "&7- &fEspada de Madera Retroceso 1",
+                "&7- &f5x Curación instantanea arrojadiz 2",
+                "&7- &f3 pociones de resistencia arrojadizas",
+                "&7- &f2 pociones de escudo arrojadizas",
+                "&7- &f2x Regeneración arrojadiza 2",
+                "&7- &f3x Regeneración arrojadiza",
+                "&7- &fBrebaje de pociones de la madre bruja",
+                "&7- &f4 corazones extra permanentes",
+                "&7- &fDebilidad permanente 2"
         };
 
-        displayItem = new CLeatherArmor(Material.LEATHER_HELMET).color(Color.RED).hideFlag(ItemFlag.HIDE_ATTRIBUTES).setName("&cSupporter").build();
+        displayItem = new CLeatherArmor(Material.LEATHER_HELMET).color(Color.RED).hideFlag(ItemFlag.HIDE_ATTRIBUTES).setName("&bSOPORTE").build();
 
         helm = new CLeatherArmor(Material.LEATHER_HELMET).color(Color.RED).makeUnbreakable().build();
         chest = new CItemStack(Material.GOLD_CHESTPLATE).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 3).makeUnbreakable().build();
@@ -43,8 +44,8 @@ public class Supporter extends Kit {
 
         hotbar[0] = new CItemStack(Material.WOOD_SWORD).addEnchantment(Enchantment.KNOCKBACK, 1).makeUnbreakable().build();
         hotbar[1] = new CPotion().addInstantEffect(true, 1).splash().setAmt(5).build();
-        hotbar[2] = new CPotion().addPotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 90).setType(PotionType.NIGHT_VISION).splash().setAmt(3).setName("&1Resistenztrank").build();
-        hotbar[3] = new CPotion().addPotionEffect(PotionEffectType.ABSORPTION, 2, 90).splash().setType(PotionType.FIRE_RESISTANCE).setAmt(2).setName("&6Schildtrank").build();
+        hotbar[2] = new CPotion().addPotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 90).setType(PotionType.NIGHT_VISION).splash().setAmt(3).setName("&1Pocion de resistencia").build();
+        hotbar[3] = new CPotion().addPotionEffect(PotionEffectType.ABSORPTION, 2, 90).splash().setType(PotionType.FIRE_RESISTANCE).setAmt(2).setName("&6Pocion de escudo").build();
         hotbar[4] = new CPotion().addPotionEffect(PotionEffectType.REGENERATION, 1, 30).splash().setType(PotionType.REGEN).setAmt(2).build();
         hotbar[5] = new CPotion().addPotionEffect(PotionEffectType.REGENERATION, 0, 60).splash().setType(PotionType.REGEN).setAmt(3).build();
         hotbar[8] = new CPotion()
@@ -55,7 +56,7 @@ public class Supporter extends Kit {
                 .addPotionEffect(PotionEffectType.BLINDNESS, 3)
                 .addPotionEffect(PotionEffectType.CONFUSION, 2)
                 .setType(PotionType.JUMP)
-                .setName("&2Kräftiges Gebräu der Hexenmutter").build();
+                .setName("&cBrebaje de la madre bruja").build();
 
         effects.add(new PotionEffect(PotionEffectType.WEAKNESS, Integer.MAX_VALUE, 2));
 	}

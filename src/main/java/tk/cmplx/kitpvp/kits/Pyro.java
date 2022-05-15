@@ -11,19 +11,20 @@ public class Pyro extends Kit {
 	
 	public Pyro() {
 		lore = new String[] {
-				"&6Dieses Kit beinhaltet:",
-				"&2- Goldschwert Verbrennung 1",
-				"&2- Bogen Flamme 1",
-				"&2- 2 Goldäpfel",
-				"&2- 32 Pfeile",
-				"&2- Goldhelm",
-				"&2- Goldbrustpanzer Schutz 2",
-				"&2- Goldhose",
-				"&2- Goldschuhe",
-				"&5- Permanent Feuerschutz 1"
+				"&6&lCOSAS",
+				"",
+				"&7- &fEspada llameante 1",
+				"&7- &fArco de llamas 1",
+				"&7- &f2 manzanas doradas",
+				"&7- &f32 flechas",
+				"&7- &fYelmo dorado",
+				"&7- &fProtección Coraza Dorada 2",
+				"&7- &fPantalones dorados",
+				"&7- &fZapatos dorados",
+				"&7- &fProtección permanente contra incendios 1"
 		};
 
-		displayItem = new CItemStack(Material.FIREBALL).setName("&6Pyro").build();
+		displayItem = new CItemStack(Material.FIREBALL).setName("&bPIROMANO").build();
 
 		helm = new CItemStack(Material.GOLD_HELMET).makeUnbreakable().build();
 		chest = new CItemStack(Material.GOLD_CHESTPLATE).makeUnbreakable()
@@ -33,10 +34,10 @@ public class Pyro extends Kit {
 		boots = new CItemStack(Material.GOLD_BOOTS).makeUnbreakable().build();
 
 		hotbar[0] = new CItemStack(Material.GOLD_SWORD).makeUnbreakable().addEnchantment(Enchantment.FIRE_ASPECT, 1)
-				.setName("&6Flammenschwert").build();
+				.setName("&6Espada llameante").build();
 
 		hotbar[1] = new CItemStack(Material.BOW).makeUnbreakable().addEnchantment(Enchantment.ARROW_FIRE, 1)
-				.setName("&6Flammenbogen").build();
+				.setName("&6Arco de llamas").build();
 
 		hotbar[7] = new CItemStack(Material.GOLDEN_APPLE, 2).build();
 		hotbar[8] = new CItemStack(Material.ARROW, 32).build();

@@ -20,23 +20,24 @@ public class Vampire extends Kit {
         permission = "kitpvp.vampire";
 
         lore = new String[]{
-                "&6Dieses Kit beinhaltet:",
-                "&2- Stab des Lebensentzugs",
-                "&2- Umhang des Vampirs",
-                "&2- 2x Frischgebraute Blutige Mara",
-                "&5- Permanent Nachtsicht"
+				"&6&lCOSAS",
+				"",
+				"&7- &fBastón de robo de vida",
+				"&7- &fCapa del Vampiro",
+				"&7- &f2x mara sangrienta",
+				"&7- &fVisión nocturna permanente"
         };
 
         displayItem = new CItemStack(Material.STICK).setName("&cVampir").build();
 
-        hotbar[0] = new CItemStack(Material.STICK).setName("&cStab des Lebensentzugs").addEnchantment(Enchantment.DAMAGE_ALL, 1).build();
+        hotbar[0] = new CItemStack(Material.STICK).setName("&cBastón de robo de vida").addEnchantment(Enchantment.DAMAGE_ALL, 1).build();
 
         chest = new CLeatherArmor(Material.LEATHER_CHESTPLATE).color(Color.PURPLE).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 4).makeUnbreakable().build();
 
         hotbar[8] = new CPotion().setType(PotionType.STRENGTH)
                 .addPotionEffect(PotionEffectType.REGENERATION, 30)
                 .addPotionEffect(PotionEffectType.BLINDNESS, 2)
-                .setName("&4Blutige Mara").setAmt(2).build();
+                .setName("&cMara sangrienta").setAmt(2).build();
 
         addEffect(new PotionEffect(PotionEffectType.NIGHT_VISION, Integer.MAX_VALUE, 2));
 	}

@@ -12,13 +12,14 @@ public class Tank extends Kit {
         permission = "kitpvp.tank";
 
         lore = new String[]{
-                "&6Dieses Kit beinhaltet:",
-                "&2- Steinschwert",
-                "&2- Volle Diamantrüstung",
-                "&c- Permanent Langsamkeit 2"
+                "&6&lCOSAS",
+                "",
+                "&7- &fEspada de piedra",
+                "&7- &fArmadura de diamante completo",
+                "&7- &fLentitud permanente 2"
         };
 
-        displayItem = new CItemStack(Material.DIAMOND_CHESTPLATE).setName("&bTank").build();
+        displayItem = new CItemStack(Material.DIAMOND_CHESTPLATE).setName("&bTANQUE").build();
 
         helm = new CItemStack(Material.DIAMOND_HELMET).makeUnbreakable().build();
         chest = new CItemStack(Material.DIAMOND_CHESTPLATE).makeUnbreakable().build();

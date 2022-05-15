@@ -18,16 +18,17 @@ public class Skeleton extends Kit {
         maxHealth = 10;
 
         lore = new String[]{
-                "&6Dieses Kit beinhaltet:",
-                "&2- Knochenkeule",
-                "&2- Knochenweiße Lederrüstung",
-                "&5- Permanent Resistenz und Schnelligkeit",
-                "&c- Permanent 5 Herzen"
+                "&6&lCOSAS",
+                "",
+                "&7- &fMaza de huesos",
+                "&7- &fArmadura de Cuero Blanco Hueso",
+                "&7- &fResistencia y Velocidad Permanentes",
+                "&7- &f5 corazones permanentes"
         };
 
-        displayItem = new CItemStack(Material.BONE).setName("&7Skelett").build();
+        displayItem = new CItemStack(Material.BONE).setName("&bESQUELETO").build();
 
-        hotbar[0] = new CItemStack(Material.BONE).setName("&7Knochenkeule").addEnchantment(Enchantment.DAMAGE_ALL, 5).build();
+        hotbar[0] = new CItemStack(Material.BONE).setName("&7Maza de huesos").addEnchantment(Enchantment.DAMAGE_ALL, 5).build();
         boots = new CLeatherArmor(Material.LEATHER_BOOTS).color(Color.WHITE).addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 3).makeUnbreakable().build();
         legs = new CLeatherArmor(Material.LEATHER_LEGGINGS).color(Color.WHITE)
                 .addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 3)

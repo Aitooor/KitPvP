@@ -28,7 +28,7 @@ public class Death implements Listener {
 
 		Player death = e.getEntity();
 
-		e.setDeathMessage(Utils.tr("&4" + death.getDisplayName() + "&c murio."));
+		e.setDeathMessage(Utils.tr("&b" + death.getDisplayName() + " &cmurio."));
 
 		death.setMaxHealth(20);
 		death.setLevel(0);
@@ -41,7 +41,7 @@ public class Death implements Listener {
 		Player killer = e.getEntity().getKiller().getPlayer();
 
 		if (killer.getName() == death.getName()) {
-			e.setDeathMessage(Utils.tr("&4" + death.getDisplayName() + "&c no queria vivir mas"));
+			e.setDeathMessage(Utils.tr("&b" + death.getDisplayName() + " &cno queria vivir mas"));
 			return;
 		}
 
@@ -49,7 +49,7 @@ public class Death implements Listener {
 		killer.playSound(killer.getLocation(), Sound.LEVEL_UP, 3, 2);
 		killer.setLevel(killer.getLevel() + 1);
 
-		e.setDeathMessage(Utils.tr("&4" + death.getDisplayName() + "&c fue asesinado por &a" + killer.getDisplayName()));
+		e.setDeathMessage(Utils.tr("&c" + death.getDisplayName() + "&f fue asesinado por &b" + killer.getDisplayName()));
 
 		if (Main.economyHook) {
 			Random r = new Random();
@@ -59,27 +59,27 @@ public class Death implements Listener {
 
 			switch (killer.getLevel()) {
 				case 3: {
-					Utils.bcast("&a" + killer.getDisplayName() + " &6tiene una racha de muertes de &d3!");
+					Utils.bcast("&c" + killer.getDisplayName() + " &ftiene una racha de muertes de &b3");
 					killstreakBonus = 10;
-					Utils.msg(killer, "&aObtienes una bonificación de racha de muertes de: " + killstreakBonus + "©!");
+					Utils.msg(killer, "&aObtienes una bonificación de racha de muertes de &e" + killstreakBonus + "&6⛃");
 					break;
 				}
 				case 5: {
-					Utils.bcast("&a" + killer.getDisplayName() + " &6tiene una racha de muertes de &55!");
+					Utils.bcast("&c" + killer.getDisplayName() + " &ftiene una racha de muertes de &b5");
 					killstreakBonus = 30;
-					Utils.msg(killer, "&aRecibes una bonificación de racha de muertes de: " + killstreakBonus + "©!");
+					Utils.msg(killer, "&aRecibes una bonificación de racha de muertes de &e" + killstreakBonus + "&6⛃");
 					break;
 				}
 				case 10: {
-					Utils.bcast("&a" + killer.getDisplayName() + " &6tiene una racha de muertes de &410!");
+					Utils.bcast("&c" + killer.getDisplayName() + " &ftiene una racha de muertes de &b10");
 					killstreakBonus = 50;
-					Utils.msg(killer, "&aObtienes una bonificación de racha de muertes de: " + killstreakBonus + "©!");
+					Utils.msg(killer, "&aObtienes una bonificación de racha de muertes de &e" + killstreakBonus + "&6⛃");
 					break;
 				}
 				case 50: {
-					Utils.bcast("&a" + killer.getDisplayName() + " &6tiene una racha de muertes de &050!");
+					Utils.bcast("&c" + killer.getDisplayName() + " &ftiene una racha de muertes de &b50!");
 					killstreakBonus = 2000;
-					Utils.msg(killer, "&aRecibes una bonificación de racha de muertes de: " + killstreakBonus + "©!");
+					Utils.msg(killer, "&aRecibes una bonificación de racha de muertes de &e" + killstreakBonus + "&6⛃");
 					break;
 				}
 				default:
@@ -98,10 +98,10 @@ public class Death implements Listener {
 
 			if (boost == 0) {
 				Main.instance.econ.depositPlayer(killer, base + killstreakBonus);
-				Utils.msg(killer, "&aTú tienes: &6" + base + "© &a¡Obtener!");
+				Utils.msg(killer, "&fHas ganado &e" + base + "&6⛃ &fcon &e" + killstreakBonus + " &fbajas de racha de muertes");
 			} else {
 				Main.instance.econ.depositPlayer(killer, base + boost + killstreakBonus);
-				Utils.msg(killer, "&aTú tienes: &6+" + (base + boost) + "© &a¡Obtener! &d(" + boostType + " el Booster activo!)");
+				Utils.msg(killer, "&fHas ganado &e" + (base + boost) + "&6⛃ &fcon un boost de &8(&b" + boostType + "&8)");
 			}
 
 		}

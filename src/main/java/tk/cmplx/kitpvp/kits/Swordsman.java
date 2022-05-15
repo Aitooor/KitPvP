@@ -9,13 +9,14 @@ public class Swordsman extends Kit {
 
 	public Swordsman() {
 		lore = new String[] {
-				"&6Dieses Kit beinhaltet:",
-				"&2- Eisenrüstung",
-				"&2- Diamantschwert",
-				"&2- 2 Goldäpfel"
+				"&6&lCOSAS",
+				"",
+				"&7- &fArmadura de Hierro",
+				"&7- &fEspada de diamante",
+				"&7- &f2 manzanas doradas"
 		};
 
-		displayItem = new CItemStack(Material.DIAMOND_SWORD).setName("&9Schwertkämpfer").build();
+		displayItem = new CItemStack(Material.DIAMOND_SWORD).setName("&9bESPADACHIN").build();
 
 		helm = new CItemStack(Material.IRON_HELMET).makeUnbreakable().build();
 		chest = new CItemStack(Material.IRON_CHESTPLATE).makeUnbreakable().build();

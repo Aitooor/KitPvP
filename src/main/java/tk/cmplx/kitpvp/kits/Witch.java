@@ -17,16 +17,17 @@ public class Witch extends Kit {
         price = 3250;
 
         lore = new String[]{
-                "&6Dieses Kit beinhaltet:",
-                "&2- Steinschwert",
-                "&2- Volle Lederrüstung",
-                "&2- 2 Werfbare Schwächetränke",
-                "&2- Werfbarer Langsamkeitstrank",
-                "&2- Werfbarer Gifttrank",
-                "&2- Heilungstrank"
+                "&6&lCOSAS",
+                "",
+                "&7- &fEspada de piedra",
+                "&7- &fArmadura de cuero completa",
+                "&7- &f2 pociones debilitantes arrojadizas",
+                "&7- &fPoción de lentitud arrojadiza",
+                "&7- &fPoción de veneno arrojadiza",
+                "&7- &fPoción curativa"
         };
 
-        displayItem = new CItemStack(Material.SPIDER_EYE).setName("&2Witch").build();
+        displayItem = new CItemStack(Material.SPIDER_EYE).setName("&bBRUJA").build();
         helm = new CLeatherArmor(Material.LEATHER_HELMET).color(Color.GRAY).makeUnbreakable().build();
         chest = new CLeatherArmor(Material.LEATHER_CHESTPLATE).color(Color.GRAY).makeUnbreakable()
                 .addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 3)

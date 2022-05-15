@@ -14,11 +14,12 @@ public class Soup extends Kit {
         price = 3500;
 
        	lore = new String[]{
-                "&6Dieses Kit beinhaltet:",
-                "&2- Steinschwert",
-                "&2- Volle Kettenrüstung",
-                "&2- 8 Zaubersuppen",
-                "&5- Heilung beim nutzen der Suppen"
+                "&6&lCOSAS",
+                "",
+                "&7- &fEspada de piedra",
+                "&7- &fArmadura de malla completa",
+                "&7- &f8 sopas mágicas",
+                "&7- &fCuración al usar las sopas"
         };
 
         displayItem = new CItemStack(Material.MUSHROOM_SOUP).setName("&eSoup").build();
@@ -29,7 +30,7 @@ public class Soup extends Kit {
         boots = new CItemStack(Material.CHAINMAIL_BOOTS).makeUnbreakable().build();
 
         hotbar[0] = new CItemStack(Material.STONE_SWORD).makeUnbreakable().build();
-        multiStack(new CItemStack(Material.MUSHROOM_SOUP).setName("&eZaubersuppe").build(), 8);
+        multiStack(new CItemStack(Material.MUSHROOM_SOUP).setName("&eSopa mágica").build(), 8);
 	}
 
 	@Override

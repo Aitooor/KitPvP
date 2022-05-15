@@ -45,7 +45,7 @@ public class KitSelection implements Listener {
 				long cooldown = System.currentTimeMillis() - (lastSelected == null ? 0 : lastSelected);
 				if (cooldown < 30000) {
 					int wait = (int) ((30000 - cooldown) / 1000);
-					Utils.msg(p, "&cTodavía tienes que esperar " + wait + " segundos!");
+					Utils.msg(p, "&cTodavía tienes que esperar &b" + wait + " &csegundos!");
 					return;
 				}
 			}
@@ -70,7 +70,7 @@ public class KitSelection implements Listener {
 							Main.instance.econ.withdrawPlayer(p, k.price);
 							Main.instance.perms.playerAdd(null, p, k.permission);
 
-							Utils.msg(p, "&aHas comprado el KIT: " + c.getItemMeta().getDisplayName()
+							Utils.msg(p, "&aHas comprado el KIT &b" + c.getItemMeta().getDisplayName()
 									+ "&a ¡Muchas gracias!");
 
 							p.playSound(p.getLocation(), Sound.LEVEL_UP, 1, 0.8F);
@@ -78,7 +78,7 @@ public class KitSelection implements Listener {
 							return;
 						} else {
 							p.playSound(p.getLocation(), Sound.VILLAGER_NO, 1, 1);
-							Utils.msg(p, "&cNo tienes suficiente dinero para el kit: " + c.getItemMeta().getDisplayName());
+							Utils.msg(p, "&cNo tienes suficiente dinero para el KIT &b" + c.getItemMeta().getDisplayName());
 							return;
 						}
 					} else {
@@ -88,7 +88,7 @@ public class KitSelection implements Listener {
 					}
 				}
 			}
-			Utils.msg(p, "&cSin derecho al kit: " + c.getItemMeta().getDisplayName());
+			Utils.msg(p, "&cSin derecho al KIT &b" + c.getItemMeta().getDisplayName());
 		}
 
 	}

@@ -19,17 +19,18 @@ public class Snowman extends Kit {
 		price = 5000;
 
 		lore = new String[] {
-				"&6Dieses Kit beinhaltet:",
-				"&2- Steinschwert Schärfe 1",
-				"&2- 64 Schneebälle",
-				"&2- Komplette Lederrüstung",
-				"&5- Schneebälle Verlangsamen den Getroffenen",
-				"&5- Schneebälle Heilen beim Treffen Für Extrem Kurze Zeit",
-				"&5- Permanent Geschwindigkeit 1"
+				"&6&lCOSAS",
+				"",
+				"&7- &fNitidez de espada de piedra 1",
+				"&7- &f64 bolas de nieve",
+				"&7- &fArmadura de cuero completa",
+				"&7- &fLas bolas de nieve ralentizan cuando golpeas",
+				"&7- &fLas bolas de nieve curan al golpearse durante un tiempo corto",
+				"&7- &fVelocidad permanente 1"
 
 		};
 
-		displayItem = new CItemStack(Material.SNOW_BALL).setName("&7Schneemann").build();
+		displayItem = new CItemStack(Material.SNOW_BALL).setName("&bMUÑECO DE NIEVE").build();
 		helm = new CLeatherArmor(Material.LEATHER_HELMET).color(Color.WHITE).makeUnbreakable().build();
 		chest = new CLeatherArmor(Material.LEATHER_CHESTPLATE).color(Color.WHITE).makeUnbreakable().addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1).build();
 		legs = new CLeatherArmor(Material.LEATHER_LEGGINGS).color(Color.WHITE).makeUnbreakable().build();

@@ -15,16 +15,17 @@ public class Rabbit extends Kit {
         price = 2650;
 
         lore = new String[]{
-                "&6Dieses Kit beinhaltet:",
-                "&2- Steinschwert",
-                "&2- Volle Kettenrüstung",
-                "&2- Federfall X Schuhe",
-                "&2- 1 Werfbarer Heilungstrank",
-                "&5- Permanent Sprungkraft",
-                "&5- Permanent Geschwindigkeit"
+                "&6&lCOSAS",
+                "",
+                "&7- &fEspada de piedra",
+                "&7- &fArmadura de malla completa",
+                "&7- &fEstuche de plumas X Zapatos",
+                "&7- &f1 poción curativa arrojadiza",
+                "&7- &fRebote permanente",
+                "&7- &fVelocidad permanente"
         };
 
-        displayItem = new CItemStack(Material.RABBIT_FOOT).setName("&aHase").build();
+        displayItem = new CItemStack(Material.RABBIT_FOOT).setName("&bCONEJO").build();
 
         helm = new CItemStack(Material.CHAINMAIL_HELMET).makeUnbreakable().build();
         chest = new CItemStack(Material.CHAINMAIL_CHESTPLATE).makeUnbreakable().build();

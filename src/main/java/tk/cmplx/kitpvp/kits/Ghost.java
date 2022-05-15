@@ -18,13 +18,14 @@ public class Ghost extends Kit {
         buyable = false;
 
         lore = new String[]{
-                "&6Dieses Kit beinhaltet:",
-                "&2- Holzchwert",
-                "&2- Werfbarer Heilungstränke",
-                "&5- *Geisterhaft*"
+                "&6&lCOSAS",
+                "",
+                "&7- &fEspada de madera",
+                "&7- &fPociones curativas arrojadizas",
+                "&7- &f*Fantasma*"
         };
 
-        displayItem = new CItemStack(Material.GLASS_BOTTLE).setName("Geist").build();
+        displayItem = new CItemStack(Material.GLASS_BOTTLE).setName("&bEspíritu").build();
 
         boots = new CLeatherArmor(Material.LEATHER_BOOTS).color(Color.BLACK).makeUnbreakable().build();
 
