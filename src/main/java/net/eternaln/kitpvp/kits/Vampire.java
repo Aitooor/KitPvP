@@ -27,7 +27,7 @@ public class Vampire extends Kit {
 				"&7- &fVisión nocturna permanente"
         };
 
-        displayItem = new CItemStack(Material.STICK).setName("&cVampir").build();
+        displayItem = new CItemStack(Material.STICK).setName("&bVAMPIRO").build();
 
         hotbar[0] = new CItemStack(Material.STICK).setName("&cBastón de robo de vida").addEnchantment(Enchantment.DAMAGE_ALL, 1).build();
 

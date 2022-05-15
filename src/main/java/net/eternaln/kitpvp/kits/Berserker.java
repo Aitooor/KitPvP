@@ -23,7 +23,7 @@ public class Berserker extends Kit {
                 "&7- &fJarabe de Vida",
         };
 
-        displayItem = new CItemStack(Material.IRON_AXE).setName("&bBerserker").build();
+        displayItem = new CItemStack(Material.IRON_AXE).setName("&bBERSERKER").build();
 
         chest = new CLeatherArmor(Material.LEATHER_CHESTPLATE).color(Color.RED).makeUnbreakable().addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1).build();
         legs = new CLeatherArmor(Material.LEATHER_LEGGINGS).color(Color.BLUE).makeUnbreakable().build();

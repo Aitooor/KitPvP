@@ -24,7 +24,7 @@ public class Ghost extends Kit {
                 "&7- &f*Fantasma*"
         };
 
-        displayItem = new CItemStack(Material.GLASS_BOTTLE).setName("&bEspíritu").build();
+        displayItem = new CItemStack(Material.GLASS_BOTTLE).setName("&bESPIRITU").build();
 
         boots = new CLeatherArmor(Material.LEATHER_BOOTS).color(Color.BLACK).makeUnbreakable().build();
 
