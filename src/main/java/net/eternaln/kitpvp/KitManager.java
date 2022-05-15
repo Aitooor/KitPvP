@@ -38,10 +38,8 @@ public class KitManager {
 			new Vampire(),
 			new Berserk(),
 			new Onehit(),
-
 			new Ghost(),
 			new Ender(),
-
 			new Dragonknight()
 	};
 

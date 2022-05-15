@@ -14,7 +14,8 @@ import org.bukkit.potion.PotionEffectType;
 public class Ghost extends Kit {
 	public Ghost() {
         permission = "kitpvp.ghost";
-        buyable = false;
+
+        price = 15000;
 
         lore = new String[]{
                 "&6&lCOSAS",

@@ -17,9 +17,9 @@ import org.bukkit.potion.PotionType;
 
 public class Dragonknight extends Kit {
 	public Dragonknight() {
-        buyable = false;
-        dropExclusive = true;
-        permission = "kitpvp.dk";
+        permission = "kitpvp.dragonknight";
+
+		price = 15000;
 
         lore = new String[]{
 				"&6&lCOSAS",

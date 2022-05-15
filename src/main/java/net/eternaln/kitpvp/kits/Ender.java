@@ -14,9 +14,9 @@ import org.bukkit.potion.PotionEffectType;
 
 public class Ender extends Kit {
 	public Ender() {
-
         permission = "kitpvp.ender";
-        buyable = false;
+
+        price = 15000;
 
         lore = new String[]{
                 "&6&lCOSAS",
