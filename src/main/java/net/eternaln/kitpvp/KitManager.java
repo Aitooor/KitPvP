@@ -22,22 +22,22 @@ public class KitManager {
 			new Pyro(),
 			new Tank(),
 
-			new Snowman(),
 			new Fisherman(),
-			new Witch(),
+			new Dressmaker(),
+			new Supporter(),
 			new Rabbit(),
 			new Berserker(),
-			new Dressmaker(),
-			new Berserk(),
+			new Skeleton(),
+			new Witch(),
 			new Soup(),
 			new Templar(),
-			new Mage(),
-			new Supporter(),
-			new Onehit(),
-			new Skeleton(),
-			new Vampire(),
-			new Wither(),
 			new Vicius(),
+			new Wither(),
+			new Mage(),
+			new Snowman(),
+			new Vampire(),
+			new Berserk(),
+			new Onehit(),
 
 			new Ghost(),
 			new Ender(),
@@ -69,7 +69,7 @@ public class KitManager {
 					}
 				}
 			} else
-				lore.add(0, ChatColor.GREEN + "¡Ya comprado!");
+				lore.add(0, ChatColor.GREEN + "¡Ya obtenido!");
 
 			dummy.setItem(slot, displayItem.addLore(lore.toArray(new String[0])).build());
 			slot++;
