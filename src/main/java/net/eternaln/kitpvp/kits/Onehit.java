@@ -19,7 +19,7 @@ public class Onehit extends Kit {
         lore = new String[]{
                 "&6&lCOSA",
                 "",
-                "&7- &fMata o muere ;)"
+                " &7- &fMata o muere ;)"
         };
 
         displayItem = new CItemStack(Material.SPECKLED_MELON).setName("&bUN GOLPE").build();

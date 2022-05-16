@@ -12,13 +12,13 @@ public class Fisherman extends Kit {
         lore = new String[]{
                 "&6&lCOSAS",
                 "",
-                "&7- &fEspada de hierro",
-                "&7- &fCaña de pescar",
-                "&7- &f2 manzanas doradas",
-                "&7- &fCasco de cota de malla",
-                "&7- &fPechera de cuero",
-                "&7- &fPantalones de cota de malla",
-                "&7- &fBotas de cota de malla"
+                " &7- &fEspada de hierro",
+                " &7- &fCaña de pescar",
+                " &7- &f2 manzanas doradas",
+                " &7- &fCasco de cota de malla",
+                " &7- &fPechera de cuero",
+                " &7- &fPantalones de cota de malla",
+                " &7- &fBotas de cota de malla"
         };
 
         displayItem = new CItemStack(Material.FISHING_ROD).setName("&bPESCADOR").build();

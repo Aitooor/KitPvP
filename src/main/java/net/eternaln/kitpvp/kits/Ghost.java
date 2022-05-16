@@ -20,9 +20,9 @@ public class Ghost extends Kit {
         lore = new String[]{
                 "&6&lCOSAS",
                 "",
-                "&7- &fEspada de madera",
-                "&7- &fPociones curativas arrojadizas",
-                "&7- &f*Fantasma*"
+                " &7- &fEspada de madera",
+                " &7- &fPociones curativas arrojadizas",
+                " &7- &f*Fantasma*"
         };
 
         displayItem = new CItemStack(Material.GLASS_BOTTLE).setName("&bESPIRITU").build();

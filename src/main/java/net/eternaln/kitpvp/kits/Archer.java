@@ -15,14 +15,14 @@ public class Archer extends Kit {
 		lore = new String[] {
 				"&6&lCOSAS",
 				"&r",
-				"&7- &fEspada de madera Filo 1",
-				"&7- &fFuerza 1&7, &fGolpeo 1&7, &fInfinito",
-				"&7- &fPoción de curación arrojadiza",
-				"&7- &fCasco de cuero",
-				"&7- &fPechera de malla",
-				"&7- &fPantalones de cuero",
-				"&7- &fBotas de cuero",
-				"&7- &fVelocidad 1 PERMANENTE"
+				" &7- &fEspada de madera Filo 1",
+				" &7- &fFuerza 1&7, &fGolpeo 1&7, &fInfinito",
+				" &7- &fPoción de curación arrojadiza",
+				" &7- &fCasco de cuero",
+				" &7- &fPechera de malla",
+				" &7- &fPantalones de cuero",
+				" &7- &fBotas de cuero",
+				" &7- &fVelocidad 1 PERMANENTE"
 		};
 
 		displayItem = new CItemStack(Material.BOW).setName("&bARQUERO").build();

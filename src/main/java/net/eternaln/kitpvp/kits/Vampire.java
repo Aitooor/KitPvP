@@ -21,10 +21,10 @@ public class Vampire extends Kit {
         lore = new String[]{
 				"&6&lCOSAS",
 				"",
-				"&7- &fBastón de robo de vida",
-				"&7- &fCapa del Vampiro",
-				"&7- &f2x mara sangrienta",
-				"&7- &fVisión nocturna permanente"
+				" &7- &fBastón de robo de vida",
+				" &7- &fCapa del Vampiro",
+				" &7- &f2x mara sangrienta",
+				" &7- &fVisión nocturna permanente"
         };
 
         displayItem = new CItemStack(Material.STICK).setName("&bVAMPIRO").build();

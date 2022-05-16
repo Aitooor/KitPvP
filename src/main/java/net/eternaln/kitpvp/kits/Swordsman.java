@@ -10,9 +10,9 @@ public class Swordsman extends Kit {
 		lore = new String[] {
 				"&6&lCOSAS",
 				"",
-				"&7- &fArmadura de Hierro",
-				"&7- &fEspada de diamante",
-				"&7- &f2 manzanas doradas"
+				" &7- &fArmadura de Hierro",
+				" &7- &fEspada de diamante",
+				" &7- &f2 manzanas doradas"
 		};
 
 		displayItem = new CItemStack(Material.DIAMOND_SWORD).setName("&bESPADACHIN").build();

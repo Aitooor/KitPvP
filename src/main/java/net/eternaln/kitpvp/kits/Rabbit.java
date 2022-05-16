@@ -16,12 +16,12 @@ public class Rabbit extends Kit {
         lore = new String[]{
                 "&6&lCOSAS",
                 "",
-                "&7- &fEspada de piedra",
-                "&7- &fArmadura de malla completa",
-                "&7- &fEstuche de plumas X Zapatos",
-                "&7- &f1 poción curativa arrojadiza",
-                "&7- &fRebote permanente",
-                "&7- &fVelocidad permanente"
+                " &7- &fEspada de piedra",
+                " &7- &fArmadura de malla completa",
+                " &7- &fEstuche de plumas X Zapatos",
+                " &7- &f1 poción curativa arrojadiza",
+                " &7- &fRebote permanente",
+                " &7- &fVelocidad permanente"
         };
 
         displayItem = new CItemStack(Material.RABBIT_FOOT).setName("&bCONEJO").build();

@@ -20,8 +20,8 @@ public class KitManager {
 			new Barbar(),
 			new Archer(),
 			new Pyro(),
-			new Tank(),
 
+			new Tank(),
 			new Fisherman(),
 			new Dressmaker(),
 			new Supporter(),
@@ -37,6 +37,7 @@ public class KitManager {
 			new Snowman(),
 			new Vampire(),
 			new Berserk(),
+
 			new Onehit(),
 			new Ghost(),
 			new Ender(),

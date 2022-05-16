@@ -20,12 +20,12 @@ public class Snowman extends Kit {
 		lore = new String[] {
 				"&6&lCOSAS",
 				"",
-				"&7- &fNitidez de espada de piedra 1",
-				"&7- &f64 bolas de nieve",
-				"&7- &fArmadura de cuero completa",
-				"&7- &fLas bolas de nieve ralentizan cuando golpeas",
-				"&7- &fLas bolas de nieve curan al golpearse durante un tiempo corto",
-				"&7- &fVelocidad permanente 1"
+				" &7- &fNitidez de espada de piedra 1",
+				" &7- &f64 bolas de nieve",
+				" &7- &fArmadura de cuero completa",
+				" &7- &fLas bolas de nieve ralentizan cuando golpeas",
+				" &7- &fLas bolas de nieve curan al golpearse durante un tiempo corto",
+				" &7- &fVelocidad permanente 1"
 
 		};
 

@@ -21,9 +21,9 @@ public class Wither extends Kit {
         lore = new String[]{
                 "&6&lCOSAS",
                 "",
-                "&7- &fEspada del Wither",
-                "&7- &f2x Poción de ceguera",
-                "&7- &fVisión nocturna permanente"
+                " &7- &fEspada del Wither",
+                " &7- &f2x Poción de ceguera",
+                " &7- &fVisión nocturna permanente"
         };
 
         displayItem = new CItemStack(Material.SKULL_ITEM).setDurability(1).setName("&bWITHER").build();

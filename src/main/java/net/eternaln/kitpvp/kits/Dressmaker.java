@@ -16,8 +16,8 @@ public class Dressmaker extends Kit {
         lore = new String[]{
                 "&6&lCOSAS",
                 "",
-                "&7- &fZapatos Versace",
-                "&7- &fCamiseta Gucci",
+                " &7- &fZapatos Versace",
+                " &7- &fCamiseta Gucci",
                 "&7- &fArma de defensa personal",
                 "&7- &f2 jugos de frambuesa",
                 "&7- &fManzana acaramelada"

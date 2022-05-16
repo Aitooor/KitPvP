@@ -12,12 +12,12 @@ public class Barbar extends Kit {
             lore = new String[]{
                 "&6&lCOSAS",
                 "&r",
-                "&7- &fHacha de piedra",
-                "&7- &fPoción de regeneración de nivel 2",
-                "&7- &fCasco de hierro",
-                "&7- &fPechera de hierro",
-                "&7- &fPantalones de hierro",
-                "&7- &fBotas de cuero"
+                " &7- &fHacha de piedra",
+                " &7- &fPoción de regeneración de nivel 2",
+                " &7- &fCasco de hierro",
+                " &7- &fPechera de hierro",
+                " &7- &fPantalones de hierro",
+                " &7- &fBotas de cuero"
         };
 
         displayItem = new CItemStack(Material.STONE_AXE).setName("&bBARBARO").build();

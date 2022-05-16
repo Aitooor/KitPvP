@@ -1,16 +1,21 @@
 package net.eternaln.kitpvp.cmd;
 
+import net.eternaln.kitpvp.KitManager;
 import net.eternaln.kitpvp.Main;
+import net.eternaln.kitpvp.utils.Kit;
+import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class Reload implements CommandExecutor {
+public class KitPvPCMD implements CommandExecutor {
+
+    Kit k = KitManager.kits[0];
 
     private final Main plugin;
 
-    public Reload(Main instance) {
+    public KitPvPCMD(Main instance) {
         plugin = instance;
     }
 

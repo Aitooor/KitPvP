@@ -21,9 +21,9 @@ public class Vicius extends Kit {
         lore = new String[]{
 				"&6&lCOSAS",
 				"",
-				"&7- &fBotella de vidrio rota",
-				"&7- &fPantalones rotos",
-				"&7- &f5 gramos de cocaina"
+				" &7- &fBotella de vidrio rota",
+				" &7- &fPantalones rotos",
+				" &7- &f5 gramos de cocaina"
         };
 
         displayItem = new CItemStack(Material.SUGAR).setName("&bVICIOSO").build();

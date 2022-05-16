@@ -10,7 +10,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import net.milkbowl.vault.economy.Economy;
 import net.milkbowl.vault.permission.Permission;
-import net.eternaln.kitpvp.cmd.Reload;
+import net.eternaln.kitpvp.cmd.KitPvPCMD;
 
 public class Main extends JavaPlugin implements Listener {
 
@@ -37,7 +37,7 @@ public class Main extends JavaPlugin implements Listener {
 		for(Kit k : KitManager.kits)
 			Log.info("Registered Kit " + k.getClass().getSimpleName());
 
-        this.getCommand("kitpvp").setExecutor(new Reload(this));
+        this.getCommand("kitpvp").setExecutor(new KitPvPCMD(this));
 
 		Log.info("Total: " + KitManager.kits.length + " Kits Registered!");
 		Log.info("Registering Events...");

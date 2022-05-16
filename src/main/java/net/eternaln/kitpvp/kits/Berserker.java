@@ -16,11 +16,11 @@ public class Berserker extends Kit {
         lore = new String[]{
                 "&6&lCOSAS",
                 "&r",
-                "&7- &fHacha de leñador",
-                "&7- &fCamisa a Cuadros Roja",
-                "&7- &fPantalones Azules",
-                "&7- &fBotas de trabajo negras",
-                "&7- &fJarabe de Vida",
+                " &7- &fHacha de leñador",
+                " &7- &fCamisa a Cuadros Roja",
+                " &7- &fPantalones Azules",
+                " &7- &fBotas de trabajo negras",
+                " &7- &fJarabe de Vida",
         };
 
         displayItem = new CItemStack(Material.IRON_AXE).setName("&bBERSERKER").build();

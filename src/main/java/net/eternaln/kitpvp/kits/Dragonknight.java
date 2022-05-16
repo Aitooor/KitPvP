@@ -24,7 +24,7 @@ public class Dragonknight extends Kit {
         lore = new String[]{
 				"&6&lCOSAS",
 				"",
-				"&7- &fEl poder dracónico"
+				" &7- &fEl poder dracónico"
         };
 
         displayItem = new CItemStack(Material.BLAZE_POWDER).setName("&bSANGRE DE DRAGON").build();

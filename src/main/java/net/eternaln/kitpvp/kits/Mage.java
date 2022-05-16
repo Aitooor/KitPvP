@@ -20,17 +20,17 @@ public class Mage extends Kit {
         lore = new String[]{
                 "&6Este kit incluye:",
                 "",
-                "&7- &fEspada de madera",
-                "&7- &fCasco de cuero",
-                "&7- &fPechera de Hierro",
-                "&7- &fPantalones de cuero",
-                "&7- &fBotas de cuero",
-                "&7- &fPoción de daño arrojadiza nivel 2",
-                "&7- &f2 pociones de daño arrojadiza nivel 1",
-                "&7- &fPoción de Regeneración",
-                "&7- &f2 pociones de salud arrojadiza",
-                "&7- &fPoción de Resistencia al Fuego",
-                "&7- &fPoción de Velocidad",
+                " &7- &fEspada de madera",
+                " &7- &fCasco de cuero",
+                " &7- &fPechera de Hierro",
+                " &7- &fPantalones de cuero",
+                " &7- &fBotas de cuero",
+                " &7- &fPoción de daño arrojadiza nivel 2",
+                " &7- &f2 pociones de daño arrojadiza nivel 1",
+                " &7- &fPoción de Regeneración",
+                " &7- &f2 pociones de salud arrojadiza",
+                " &7- &fPoción de Resistencia al Fuego",
+                " &7- &fPoción de Velocidad",
                 "&7- &fVisión nocturna permanente"
         };
 

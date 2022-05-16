@@ -18,12 +18,12 @@ public class Witch extends Kit {
         lore = new String[]{
                 "&6&lCOSAS",
                 "",
-                "&7- &fEspada de piedra",
-                "&7- &fArmadura de cuero completa",
-                "&7- &f2 pociones debilitantes arrojadizas",
-                "&7- &fPoción de lentitud arrojadiza",
-                "&7- &fPoción de veneno arrojadiza",
-                "&7- &fPoción curativa"
+                " &7- &fEspada de piedra",
+                " &7- &fArmadura de cuero completa",
+                " &7- &f2 pociones debilitantes arrojadizas",
+                " &7- &fPoción de lentitud arrojadiza",
+                " &7- &fPoción de veneno arrojadiza",
+                " &7- &fPoción curativa"
         };
 
         displayItem = new CItemStack(Material.SPIDER_EYE).setName("&bBRUJA").build();

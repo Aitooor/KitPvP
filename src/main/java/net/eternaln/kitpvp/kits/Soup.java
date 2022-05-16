@@ -15,10 +15,10 @@ public class Soup extends Kit {
        	lore = new String[]{
                 "&6&lCOSAS",
                 "",
-                "&7- &fEspada de piedra",
-                "&7- &fArmadura de malla completa",
-                "&7- &f8 sopas mágicas",
-                "&7- &fCuración al usar las sopas"
+                " &7- &fEspada de piedra",
+                " &7- &fArmadura de malla completa",
+                " &7- &f8 sopas mágicas",
+                " &7- &fCuración al usar las sopas"
         };
 
         displayItem = new CItemStack(Material.MUSHROOM_SOUP).setName("&bSOPITA").build();

@@ -16,9 +16,9 @@ public class Berserk extends Kit {
 		lore = new String[] {
 				"&6&lCOSAS",
 				"&r",
-				"&7- &fEspada de hierro",
-				"&7- &fPechera de cuero",
-				"&7- &fFuerza 1 Permanente"
+				" &7- &fEspada de hierro",
+				" &7- &fPechera de cuero",
+				" &7- &fFuerza 1 Permanente"
 		};
 
 		displayItem = new CItemStack(Material.IRON_SWORD).setName("&bENLOQUEZIDO").build();

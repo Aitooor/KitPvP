@@ -19,10 +19,10 @@ public class Skeleton extends Kit {
         lore = new String[]{
                 "&6&lCOSAS",
                 "",
-                "&7- &fMaza de huesos",
-                "&7- &fArmadura de Cuero Blanco Hueso",
-                "&7- &fResistencia y Velocidad Permanentes",
-                "&7- &f5 corazones permanentes"
+                " &7- &fMaza de huesos",
+                " &7- &fArmadura de Cuero Blanco Hueso",
+                " &7- &fResistencia y Velocidad Permanentes",
+                " &7- &f5 corazones permanentes"
         };
 
         displayItem = new CItemStack(Material.BONE).setName("&bESQUELETO").build();

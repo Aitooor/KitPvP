@@ -21,14 +21,14 @@ public class Ender extends Kit {
         lore = new String[]{
                 "&6&lCOSAS",
                 "",
-                "&7- &fEspada de piedra",
-                "&7- &fCasco de cuero",
-                "&7- &fPechera de hierro a prueba de balas 1",
-                "&7- &f8 perlas ender",
-                "&7- &fPantalones de cuero",
-                "&7- &fBotas de hierro Caida Pluma 10",
-                "&7- &fCura al golpear la enderpearl por un corto tiempo",
-                "&7- &fVelocidad 1 permanente"
+                " &7- &fEspada de piedra",
+                " &7- &fCasco de cuero",
+                " &7- &fPechera de hierro a prueba de balas 1",
+                " &7- &f8 perlas ender",
+                " &7- &fPantalones de cuero",
+                " &7- &fBotas de hierro Caida Pluma 10",
+                " &7- &fCura al golpear la enderpearl por un corto tiempo",
+                " &7- &fVelocidad 1 permanente"
         };
 
         displayItem = new CItemStack(Material.ENDER_PEARL).setName("&bENDERMAN").build();

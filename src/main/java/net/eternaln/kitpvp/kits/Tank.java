@@ -14,9 +14,9 @@ public class Tank extends Kit {
         lore = new String[]{
                 "&6&lCOSAS",
                 "",
-                "&7- &fEspada de piedra",
-                "&7- &fArmadura de diamante completo",
-                "&7- &fLentitud permanente 2"
+                " &7- &fEspada de piedra",
+                " &7- &fArmadura de diamante completo",
+                " &7- &fLentitud permanente 2"
         };
 
         displayItem = new CItemStack(Material.DIAMOND_CHESTPLATE).setName("&bTANQUE").build();

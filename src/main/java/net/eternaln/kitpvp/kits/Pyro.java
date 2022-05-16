@@ -13,15 +13,15 @@ public class Pyro extends Kit {
 		lore = new String[] {
 				"&6&lCOSAS",
 				"",
-				"&7- &fEspada llameante 1",
-				"&7- &fArco de llamas 1",
-				"&7- &f2 manzanas doradas",
-				"&7- &f32 flechas",
-				"&7- &fYelmo dorado",
-				"&7- &fProtección Coraza Dorada 2",
-				"&7- &fPantalones dorados",
-				"&7- &fZapatos dorados",
-				"&7- &fProtección permanente contra incendios 1"
+				" &7- &fEspada llameante 1",
+				" &7- &fArco de llamas 1",
+				" &7- &f2 manzanas doradas",
+				" &7- &f32 flechas",
+				" &7- &fYelmo dorado",
+				" &7- &fProtección Coraza Dorada 2",
+				" &7- &fPantalones dorados",
+				" &7- &fZapatos dorados",
+				" &7- &fProtección permanente contra incendios 1"
 		};
 
 		displayItem = new CItemStack(Material.FIREBALL).setName("&bPIROMANO").build();

@@ -17,10 +17,10 @@ public class Templar extends Kit {
        	lore = new String[]{
                 "&6&lCOSAS",
                 "",
-                "&7- &fEspada de hierro",
-                "&7- &fPechera de Hierro Protección 1",
-                "&7- &f2 pociones de salud arrojadizas",
-                "&7- &f14 corazones de oro extra"
+                " &7- &fEspada de hierro",
+                " &7- &fPechera de Hierro Protección 1",
+                " &7- &f2 pociones de salud arrojadizas",
+                " &7- &f14 corazones de oro extra"
         };
 
         displayItem = new CItemStack(Material.GOLDEN_APPLE).setName("&bTEMPLARIO").build();
