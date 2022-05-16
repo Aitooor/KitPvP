@@ -22,7 +22,7 @@ public class Wither extends Kit {
                 "&6&lCOSAS",
                 "",
                 " &7- &fEspada del Wither",
-                " &7- &f2x Poción de ceguera",
+                " &7- &f2 Poción de ceguera",
                 " &7- &fVisión nocturna permanente"
         };
 

@@ -23,7 +23,7 @@ public class Vampire extends Kit {
 				"",
 				" &7- &fBastón de robo de vida",
 				" &7- &fCapa del Vampiro",
-				" &7- &f2x mara sangrienta",
+				" &7- &f2 mara sangrienta",
 				" &7- &fVisión nocturna permanente"
         };
 

@@ -18,9 +18,9 @@ public class Dressmaker extends Kit {
                 "",
                 " &7- &fZapatos Versace",
                 " &7- &fCamiseta Gucci",
-                "&7- &fArma de defensa personal",
-                "&7- &f2 jugos de frambuesa",
-                "&7- &fManzana acaramelada"
+                " &7- &fArma de defensa personal",
+                " &7- &f2 jugos de frambuesa",
+                " &7- &fManzana acaramelada"
         };
 
         displayItem = new CItemStack(Material.CAKE).setName("&bMODISTA").build();

@@ -31,7 +31,7 @@ public class Mage extends Kit {
                 " &7- &f2 pociones de salud arrojadiza",
                 " &7- &fPoción de Resistencia al Fuego",
                 " &7- &fPoción de Velocidad",
-                "&7- &fVisión nocturna permanente"
+                " &7- &fVisión nocturna permanente"
         };
 
         displayItem = new CPotion().setType(PotionType.NIGHT_VISION).hideFlag(ItemFlag.HIDE_POTION_EFFECTS).setName("&bMAGO").build();

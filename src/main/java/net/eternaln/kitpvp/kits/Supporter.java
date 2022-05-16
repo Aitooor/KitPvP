@@ -24,14 +24,14 @@ public class Supporter extends Kit {
                 "",
                 " &7- &fPechera de oro Protección 3",
                 " &7- &fEspada de Madera Retroceso 1",
-                " &7- &f5x Curación instantanea arrojadiz 2",
+                " &7- &f5 Curación instantanea arrojadiz 2",
                 " &7- &f3 pociones de resistencia arrojadizas",
-                "&7- &f2 pociones de escudo arrojadizas",
-                "&7- &f2x Regeneración arrojadiza 2",
-                "&7- &f3x Regeneración arrojadiza",
-                "&7- &fBrebaje de pociones de la madre bruja",
-                "&7- &f4 corazones extra permanentes",
-                "&7- &fDebilidad permanente 2"
+                " &7- &f2 pociones de escudo arrojadizas",
+                " &7- &f2 Regeneración arrojadiza 2",
+                " &7- &f3 Regeneración arrojadiza",
+                " &7- &fBrebaje de pociones de la madre bruja",
+                " &7- &f4 corazones extra permanentes",
+                " &7- &fDebilidad permanente 2"
         };
 
         displayItem = new CLeatherArmor(Material.LEATHER_HELMET).color(Color.RED).hideFlag(ItemFlag.HIDE_ATTRIBUTES).setName("&bSOPORTE").build();
