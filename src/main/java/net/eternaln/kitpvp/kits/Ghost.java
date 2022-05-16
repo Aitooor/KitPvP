@@ -15,7 +15,7 @@ public class Ghost extends Kit {
 	public Ghost() {
         permission = "kitpvp.ghost";
 
-        price = 15000;
+        price = 20000;
 
         lore = new String[]{
                 "&6&lCOSAS",

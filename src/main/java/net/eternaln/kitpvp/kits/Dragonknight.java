@@ -19,7 +19,7 @@ public class Dragonknight extends Kit {
 	public Dragonknight() {
         permission = "kitpvp.dragonknight";
 
-		price = 15000;
+		price = 20000;
 
         lore = new String[]{
 				"&6&lCOSAS",

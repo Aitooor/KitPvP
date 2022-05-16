@@ -16,7 +16,7 @@ public class Ender extends Kit {
 	public Ender() {
         permission = "kitpvp.ender";
 
-        price = 15000;
+        price = 20000;
 
         lore = new String[]{
                 "&6&lCOSAS",
