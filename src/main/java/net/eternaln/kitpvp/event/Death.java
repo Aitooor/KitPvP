@@ -59,27 +59,27 @@ public class Death implements Listener {
 
 			switch (killer.getLevel()) {
 				case 3: {
-					Utils.bcast("&c" + killer.getDisplayName() + " &ftiene una racha de muertes de &b3");
+					Utils.bcast("&c" + killer.getDisplayName() + " &ftiene una racha de &b3 &fasesinatos");
 					killstreakBonus = 10;
-					Utils.msg(killer, "&aObtienes una bonificación de racha de muertes de &e" + killstreakBonus + "&6⛃");
+					Utils.msg(killer, "&aObtienes una bonificación de racha de asesinatos de &e" + killstreakBonus + "&6⛃");
 					break;
 				}
 				case 5: {
-					Utils.bcast("&c" + killer.getDisplayName() + " &ftiene una racha de muertes de &b5");
+					Utils.bcast("&c" + killer.getDisplayName() + " &ftiene una racha de &b5 &fasesinatos");
 					killstreakBonus = 30;
-					Utils.msg(killer, "&aRecibes una bonificación de racha de muertes de &e" + killstreakBonus + "&6⛃");
+					Utils.msg(killer, "&aRecibes una bonificación de racha de asesinatos de &e" + killstreakBonus + "&6⛃");
 					break;
 				}
 				case 10: {
-					Utils.bcast("&c" + killer.getDisplayName() + " &ftiene una racha de muertes de &b10");
+					Utils.bcast("&c" + killer.getDisplayName() + " &ftiene una racha de &b10 &fasesinatos");
 					killstreakBonus = 50;
-					Utils.msg(killer, "&aObtienes una bonificación de racha de muertes de &e" + killstreakBonus + "&6⛃");
+					Utils.msg(killer, "&aObtienes una bonificación de racha de asesinatos de &e" + killstreakBonus + "&6⛃");
 					break;
 				}
 				case 50: {
-					Utils.bcast("&c" + killer.getDisplayName() + " &ftiene una racha de muertes de &b50!");
+					Utils.bcast("&c" + killer.getDisplayName() + " &ftiene una racha de &b50 &fasesinatos");
 					killstreakBonus = 2000;
-					Utils.msg(killer, "&aRecibes una bonificación de racha de muertes de &e" + killstreakBonus + "&6⛃");
+					Utils.msg(killer, "&aRecibes una bonificación de racha de asesinatos de &e" + killstreakBonus + "&6⛃");
 					break;
 				}
 				default:
