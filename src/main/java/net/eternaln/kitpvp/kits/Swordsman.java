@@ -7,6 +7,8 @@ import org.bukkit.Material;
 public class Swordsman extends Kit {
 
 	public Swordsman() {
+		permission = "kitpvp.swordsman";
+
 		lore = new String[] {
 				"&6&lCOSAS",
 				"",

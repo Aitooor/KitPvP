@@ -16,7 +16,7 @@ import org.bukkit.potion.PotionEffectType;
 public class Vicius extends Kit {
 	public Vicius() {
         price = 4000;
-        permission = "kitpvp.drugaddict";
+        permission = "kitpvp.vicius";
 
         lore = new String[]{
 				"&6&lCOSAS",

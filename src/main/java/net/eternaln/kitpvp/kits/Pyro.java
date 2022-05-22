@@ -10,6 +10,8 @@ import org.bukkit.potion.PotionEffectType;
 public class Pyro extends Kit {
 	
 	public Pyro() {
+		permission = "kitpvp.pyro";
+
 		lore = new String[] {
 				"&6&lCOSAS",
 				"",

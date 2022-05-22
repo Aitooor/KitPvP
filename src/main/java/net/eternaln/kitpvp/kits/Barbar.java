@@ -9,6 +9,8 @@ import org.bukkit.potion.PotionType;
 
 public class Barbar extends Kit {
 	public Barbar() {
+            permission = "kitpvp.barbar";
+
             lore = new String[]{
                 "&6&lCOSAS",
                 "&r",

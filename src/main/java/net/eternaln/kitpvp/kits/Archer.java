@@ -12,6 +12,8 @@ import org.bukkit.potion.PotionEffectType;
 
 public class Archer extends Kit {
 	public Archer() {
+		permission = "kitpvp.archer";
+
 		lore = new String[] {
 				"&6&lCOSAS",
 				"&r",
