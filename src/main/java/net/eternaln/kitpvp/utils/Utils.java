@@ -3,6 +3,7 @@ package net.eternaln.kitpvp.utils;
 import java.util.List;
 
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.HumanEntity;
@@ -12,6 +13,7 @@ import org.bukkit.metadata.FixedMetadataValue;
 import org.bukkit.metadata.MetadataValue;
 
 import net.eternaln.kitpvp.Main;
+import org.jetbrains.annotations.NotNull;
 
 public class Utils {
 
@@ -51,6 +53,25 @@ public class Utils {
 		}
 
 		return null;
+	}
+
+	public static void log(String... args){
+		for(String str : args)
+			Bukkit.getServer().getConsoleSender().sendMessage(ct(getPrefix() + str));
+	}
+
+	public static void logError(String... args){
+		for(String str : args){
+			Bukkit.getServer().getConsoleSender().sendMessage(ct(getPrefix() + "[ERROR] &c" + str));
+		}
+	}
+
+	static String getPrefix(){
+		return  "[ KitPvP ] ";
+	}
+
+	public static @NotNull String ct(String source){
+		return ChatColor.translateAlternateColorCodes('&', source);
 	}
 
 }

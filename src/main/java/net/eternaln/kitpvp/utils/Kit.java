@@ -59,11 +59,9 @@ public abstract class Kit {
 
 		// CLEARING
 
-		pi.clear();
+		clearPlayer(p.getPlayer());
+
 		p.setGameMode(GameMode.SURVIVAL);
-	
-		for (PotionEffect effect : p.getActivePotionEffects())
-			p.removePotionEffect(effect.getType());
 
 		// APPLY
 
@@ -100,4 +98,12 @@ public abstract class Kit {
 	public void onDamageReceive(EntityDamageByEntityEvent event, Player dealer, Player receiver) {}
 	public void onSneak(PlayerToggleSneakEvent event, Player player) {}
 
+	private void clearPlayer(Player p){
+		p.getActivePotionEffects().forEach(effect -> p.removePotionEffect(effect.getType()));
+		p.getInventory().clear();
+		p.getInventory().setArmorContents(new ItemStack[4]);
+		p.setExp(0F);
+		p.setLevel(0);
+		p.setMaxHealth(20);
+	}
 }

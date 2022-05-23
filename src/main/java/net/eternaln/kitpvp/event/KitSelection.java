@@ -39,7 +39,6 @@ public class KitSelection implements Listener {
 		Kit k = KitManager.kits[e.getRawSlot()];
 
 		if (p.hasPermission(k.permission)) {
-
 			if (!p.hasPermission("kitpvp.bypasscooldown")) {
 				Long lastSelected = Utils.getMetadata(p, "kitpvp.lastSelected", Long.class);
 				long cooldown = System.currentTimeMillis() - (lastSelected == null ? 0 : lastSelected);
@@ -49,6 +48,7 @@ public class KitSelection implements Listener {
 					return;
 				}
 			}
+
 
 			Utils.msg(p, "&aSeleccionado &f" + c.getItemMeta().getDisplayName());
 			p.playSound(p.getLocation(), Sound.ORB_PICKUP, 3, 1);

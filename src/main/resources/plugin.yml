@@ -5,3 +5,4 @@ version: ${project.version}
 commands:
    kitpvp:
       aliases: [kpvp]
+   spawn:

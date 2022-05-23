@@ -1,8 +1,10 @@
 package net.eternaln.kitpvp;
 
+import net.eternaln.kitpvp.cmd.SpawnCMD;
 import net.eternaln.kitpvp.event.*;
 import net.eternaln.kitpvp.utils.Kit;
 import net.eternaln.kitpvp.utils.Log;
+import net.eternaln.kitpvp.utils.Utils;
 import org.bukkit.Bukkit;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.RegisteredServiceProvider;
@@ -38,19 +40,7 @@ public class Main extends JavaPlugin implements Listener {
 			Log.info("Registered Kit " + k.getClass().getSimpleName());
 
         this.getCommand("kitpvp").setExecutor(new KitPvPCMD(this));
-
-		Log.info("Total: " + KitManager.kits.length + " Kits Registered!");
-		Log.info("Registering Events...");
-
-        Bukkit.getServer().getPluginManager().registerEvents(new Death(), this);
-        Bukkit.getServer().getPluginManager().registerEvents(new KitSelection(), this);
-        Bukkit.getServer().getPluginManager().registerEvents(new SignInteraction(), this);
-        Bukkit.getServer().getPluginManager().registerEvents(new KitSpecific(), this);
-        Bukkit.getServer().getPluginManager().registerEvents(new SmallEvents(), this);
-		if(pluginExists("NametagEdit")) {
-			fix = new InvisibilityBugFix();
-			Bukkit.getServer().getPluginManager().registerEvents(fix, this);
-		}
+        this.getCommand("spawn").setExecutor(new SpawnCMD(this));
 
         Log.info("Loading Plugin Hooks...");
 
@@ -67,6 +57,28 @@ public class Main extends JavaPlugin implements Listener {
             Log.info("Hooked Permissions: " + permissionHook);
 			
         } else Log.info("Failed!");
+
+        if (Bukkit.getPluginManager().getPlugin("PlaceholderAPI") != null) {
+            Log.info("Total: " + KitManager.kits.length + " Kits Registered!");
+            Log.info("Registering Events...");
+
+            Bukkit.getServer().getPluginManager().registerEvents(new Death(), this);
+            Bukkit.getServer().getPluginManager().registerEvents(new KitSelection(), this);
+            Bukkit.getServer().getPluginManager().registerEvents(new SignInteraction(), this);
+            Bukkit.getServer().getPluginManager().registerEvents(new KitSpecific(), this);
+            Bukkit.getServer().getPluginManager().registerEvents(new SmallEvents(), this);
+            Bukkit.getServer().getPluginManager().registerEvents(new Player(this), this);
+            if(pluginExists("NametagEdit")) {
+                fix = new InvisibilityBugFix();
+                Bukkit.getServer().getPluginManager().registerEvents(fix, this);
+            }
+
+            Utils.log("&aHooked to PlaceholderAPI.");
+            Utils.log("");
+        } else {
+            Utils.logError("Could not find PlaceholderAPI! This plugin is required.");
+            Bukkit.getPluginManager().disablePlugin(this);
+        }
 
         Log.info("Enabled KitPvP");
     }
