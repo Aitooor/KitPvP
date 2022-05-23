@@ -19,11 +19,11 @@ public class Pyro extends Kit {
 				" &7- &fArco de llamas 1",
 				" &7- &f2 manzanas doradas",
 				" &7- &f32 flechas",
-				" &7- &fYelmo dorado",
-				" &7- &fProtección Coraza Dorada 2",
-				" &7- &fPantalones dorados",
-				" &7- &fZapatos dorados",
-				" &7- &fProtección permanente contra incendios 1"
+				" &7- &7Casco de oro",
+				" &7- &fPechera de oro Protección 2",
+				" &7- &fPantalones de oro",
+				" &7- &fZapatos de oro",
+				" &7- &fProtección contra el fuego 1 permanente"
 		};
 
 		displayItem = new CItemStack(Material.FIREBALL).setName("&bPIROMANO").build();

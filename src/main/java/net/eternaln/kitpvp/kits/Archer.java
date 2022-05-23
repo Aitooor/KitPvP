@@ -21,7 +21,7 @@ public class Archer extends Kit {
 				" &7- &fFuerza 1&7, &fGolpeo 1&7, &fInfinito",
 				" &7- &fPoción de curación arrojadiza",
 				" &7- &fCasco de cuero",
-				" &7- &fPechera de malla",
+				" &7- &fPechera de cota de malla",
 				" &7- &fPantalones de cuero",
 				" &7- &fBotas de cuero",
 				" &7- &fVelocidad 1 PERMANENTE"

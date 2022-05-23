@@ -17,8 +17,8 @@ public class Barbar extends Kit {
                 " &7- &fHacha de piedra",
                 " &7- &fPoción de regeneración de nivel 2",
                 " &7- &fCasco de hierro",
-                " &7- &fPechera de hierro",
-                " &7- &fPantalones de hierro",
+                " &7- &fPechera de cota de malla",
+                " &7- &fPantalones de cuero",
                 " &7- &fBotas de cuero"
         };
 

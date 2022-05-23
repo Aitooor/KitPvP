@@ -20,7 +20,7 @@ public class Skeleton extends Kit {
                 "&6&lCOSAS",
                 "",
                 " &7- &fMaza de huesos",
-                " &7- &fArmadura de Cuero Blanco Hueso",
+                " &7- &fArmadura de cuero Blanco Hueso",
                 " &7- &fResistencia y Velocidad Permanentes",
                 " &7- &f5 corazones permanentes"
         };

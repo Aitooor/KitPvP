@@ -22,7 +22,8 @@ public class Ghost extends Kit {
                 "",
                 " &7- &fEspada de madera",
                 " &7- &fPociones curativas arrojadizas",
-                " &7- &f*Fantasma*"
+                " &7- &7*&fFantasma&7*",
+                " &7- &fBotas negras",
         };
 
         displayItem = new CItemStack(Material.GLASS_BOTTLE).setName("&bESPIRITU").build();

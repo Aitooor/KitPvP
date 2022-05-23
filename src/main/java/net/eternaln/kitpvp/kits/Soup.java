@@ -16,7 +16,7 @@ public class Soup extends Kit {
                 "&6&lCOSAS",
                 "",
                 " &7- &fEspada de piedra",
-                " &7- &fArmadura de malla completa",
+                " &7- &fArmadura de cota de malla completa",
                 " &7- &f8 sopas mágicas",
                 " &7- &fCuración al usar las sopas"
         };
