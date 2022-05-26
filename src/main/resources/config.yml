@@ -6,12 +6,14 @@ LOCATION:
 ONJOIN:
   TITLE: "&6&lETERNAL &8| &bKitPvP"
 
-## SIGNS CONFIGURATION #######################################################################
-## If you used &0 as first color, you don't need to write it. Example: &lTEST = &0&lTEST.  ##
-## Si usas &0 como primer color, no debes escribirlo. Ejemplo: &lTEST = &0&lTEST.         ##
-###########################################################################################
-signs:
+## Cooldown ##
+kit-selection:
+  cooldown: 5000 # 5000 = 5sec
+
+## SIGNS CONFIGURATION ##
   admin-setup-name: "[kitpvp]"
+  ## If you used &0 as first color, you don't need to write it. Example: &lTEST = &0&lTEST.
+  ## Si usas &0 como primer color, no debes escribirlo. Ejemplo: &lTEST = &0&lTEST.
   lines:
     first-line: "&l✼ KitPvP ✼"
     second-line: "&5Selecciona tu &lKIT"

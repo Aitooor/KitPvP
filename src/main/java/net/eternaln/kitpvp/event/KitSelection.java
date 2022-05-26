@@ -8,6 +8,7 @@ import net.eternaln.kitpvp.utils.Utils;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.Sound;
+import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -19,6 +20,8 @@ import org.bukkit.inventory.ItemStack;
 import net.md_5.bungee.api.ChatColor;
 
 public class KitSelection implements Listener {
+
+	FileConfiguration config = Main.instance.getConfig();
 
 	public KitSelection() {
 		Log.info("Registered KitSelection Event!");
@@ -42,8 +45,8 @@ public class KitSelection implements Listener {
 			if (!p.hasPermission("kitpvp.bypasscooldown")) {
 				Long lastSelected = Utils.getMetadata(p, "kitpvp.lastSelected", Long.class);
 				long cooldown = System.currentTimeMillis() - (lastSelected == null ? 0 : lastSelected);
-				if (cooldown < 30000) {
-					int wait = (int) ((30000 - cooldown) / 1000);
+				if (cooldown < config.getInt("kit-selection.cooldown")) {
+					int wait = (int) ((config.getInt("kit-selection.cooldown") - cooldown) / 1000);
 					Utils.msg(p, "&cTodavía tienes que esperar &b" + wait + " &csegundos!");
 					return;
 				}
